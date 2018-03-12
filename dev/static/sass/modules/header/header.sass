@@ -1,1 +1,31 @@
 header
+  background-color: rgba(0, 0, 0, .5)
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+.navbar
+  width: 100%
+.logo
+.nav
+  justify-content: flex-end
+  &__list
+    display: flex
+  &__item
+    padding: 0 5px
+    &:last-child
+      padding: 0 0 0 5px
+  &__link
+    color: #fff
+    text-transform: uppercase
+    padding: 15px 10px
+    line-height: 35px
+    font-size: 15px
+    transition: .2s
+    &:hover
+      background-color: $mainColor
+      text-decoration: none
+      color: #fff
+
+.dropdown
+  display: none
