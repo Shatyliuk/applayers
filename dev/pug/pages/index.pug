@@ -2,3 +2,24 @@ extends ../layout/main
 block variables
     - var title = 'Index'
 block content
+    section.topBanner
+        .container
+            .row
+                .col-lg-6
+                    .topBanner__text
+                        h1.topBanner__header Present your app in beautiful way with App Layers.
+                        h4.topBanner__available
+                            | Available on &nbsp
+                            span.topBanner__accent App Store &nbsp
+                            | and &nbsp
+                            span.topBanner__accent Play Store
+                        .sectionButtons
+                            a.btn.btn-red.btn-mright
+                                i.fa.fa-apple
+                                |App Store
+                            a.btn.btn-yellow
+                                i.fa.fa-android
+                                |Play Store
+                .col-lg-6
+                    .topBanner__image
+                        img.topBanner__img(src='/static/img/image-1.png')
