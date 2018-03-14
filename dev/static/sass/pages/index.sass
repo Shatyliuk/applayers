@@ -1,7 +1,8 @@
 .topBanner
-  background: hsl(220, 93%, 6%) url("/static/img/top_banner.png") fixed 0 0 no-repeat
+  background: hsl(220, 93%, 6%) url("../img/top_banner.png") fixed 0 0 no-repeat
   background-size: cover
   padding-bottom: 0
+  overflow: hidden
   &:after
     content: ''
     position: absolute
@@ -29,3 +30,127 @@
   &__img
     animation-delay: 1s
     animation: float-img infinite 15s
+
+.features
+  &__img
+    img
+      animation: float-img-small infinite 10s
+.sectionHeading
+  text-align: center
+  margin-bottom: 60px
+  &-white
+    color: #fff
+  &__header
+    font-family: $secondFont
+    border-bottom: 1px solid rgba(0, 0, 0, .5)
+    font-size: 3em
+    display: inline-block
+    padding-bottom: 20px
+    position: relative
+    font-weight: 300
+    margin-bottom: 60px
+    &:after
+      content: ''
+      display: inline-block
+      font-family: fontawesome, sans-serif
+      position: absolute
+      bottom: -36px
+      font-size: 30px
+      color: rgba(0, 0, 0, .5)
+      left: 50%
+      transform: translate(-50%, -50%)
+    &-white
+      color: #fff
+      border-bottom-color: rgba(255, 255, 255, 0.5)
+      &:after
+        color: rgba(255, 255, 255, 0.5)
+  &__text
+    font-family: $secondFont
+    font-weight: 300
+    color: #555454
+    line-height: 1.4
+    padding: 0 0 50px
+    font-size: 2em
+    &-white
+      color: #fff
+.featuresDetails
+  display: flex
+  &__column-right
+    text-align: right
+  &__item
+    padding: 10px 20px 30px 0
+    border: 1px solid #bfbfbf
+    &:last-child
+      border-left: none
+      border-bottom: none
+    &:first-child
+      border-top: none
+      border-left: none
+    &-right
+      padding: 10px 0 30px 20px
+      &:first-child
+        border-left: 1px solid #bfbfbf
+        border-right: none
+      &:last-child
+        border-left: 1px solid #bfbfbf
+        border-right: none
+        border-bottom: none
+  &__icon
+    color: $mainYellowColor
+    font-size: 2em
+  &__heading
+    font-size: 1.5em
+    margin-top: 10px
+    margin-bottom: 10px
+  &__text
+    font-weight: 300
+    color: #555454
+    font-size: 16px
+.services
+  background: url("../img/services_bg.png") center center no-repeat fixed
+  padding-bottom: 0
+  overflow: hidden
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+    left: 0
+    background-color: rgba(1, 10, 28, 0.8)
+.servicesImage
+  display: flex
+  &__img
+    &-left
+      margin-right: 15px
+      transform: translateY(10%)
+.servicesDetails
+  padding-left: 120px
+  font-family: $secondFont
+  &__item
+    display: flex
+    margin-bottom: 40px
+  &__link
+    display: flex
+
+  &__circle
+    padding: 22px 32px
+    border-radius: 50%
+    border: 2px solid $mainYellowColor
+    font-size: 2.2em
+    color: $mainYellowColor
+    margin-right: 15px
+
+  &__icon
+    transition: .5s
+    &:hover
+      transform: rotate(360deg)
+  &__header
+    color: #fff
+    font-size: 1.8em
+    margin-bottom: 25px
+  &__text
+    color: #fff
+    font-size: 14px
+    font-weight: 300
