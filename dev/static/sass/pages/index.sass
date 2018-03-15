@@ -1,3 +1,4 @@
+//top banner section
 .topBanner
   background: hsl(220, 93%, 6%) url("../img/top_banner.png") fixed 0 0 no-repeat
   background-size: cover
@@ -30,7 +31,7 @@
   &__img
     animation-delay: 1s
     animation: float-img infinite 15s
-
+//section features
 .features
   &__img
     img
@@ -106,6 +107,7 @@
     font-weight: 300
     color: #555454
     font-size: 16px
+//section services
 .services
   background: url("../img/services_bg.png") center center no-repeat fixed
   padding-bottom: 0
@@ -125,6 +127,7 @@
     &-left
       margin-right: 15px
       transform: translateY(10%)
+
 .servicesDetails
   padding-left: 120px
   font-family: $secondFont
@@ -154,3 +157,84 @@
     color: #fff
     font-size: 14px
     font-weight: 300
+
+//section how it works
+.howItWork
+  font-family: $secondFont
+
+.howItWorkInfo
+  display: flex
+  flex-direction: column
+  margin-top: 50px
+  &-left
+    text-align: right
+  &__image
+    text-align: center
+    img
+      animation: float-img-small infinite 10s
+  &__icon
+    font-size: 3rem
+    color: $mainYellowColor
+  &__link-border
+    color: #555454
+    font-size: 1.8em
+    padding-bottom: 15px
+    border-bottom: 1px solid $mainYellowColor
+    margin-bottom: 10px
+
+//portfolio
+.portfolio
+  background-color: #f0efef
+.tags
+  margin-bottom: 45px
+  &__list
+    display: flex
+    justify-content: space-between
+  &__link
+    padding: 10px 55px
+    background-color: #fff
+    transition: .3s
+    &:hover
+      background-color: $mainYellowColor
+      color: #fff
+      text-decoration: none
+.portfolioItems
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  &__item
+    position: relative
+    margin-bottom: 15px
+    flex-basis: 32%
+    overflow: hidden
+    outline: 1px solid #000
+    &:nth-child(3)
+      margin-right: 0
+    &:last-child
+      margin-right: 0
+    &:hover .portfolioItems__header,
+    &:hover .portfolioItems__text
+      margin-left: 5px
+      transform: translateX(0)
+      pointer-events: none
+  &__header,
+  &__text
+    position: absolute
+    transition: .8s
+    padding: 5px 15px
+    background-color: rgba(0, 0, 0, .45)
+    border-left: 2px solid #fff
+    transform: translateX(-100%)
+  &__header
+    color: $mainYellowColor
+    top: 20%
+    font-size: 1.4em
+  &__text
+    color: #fff
+    top: 50%
+    font-size: 1em
+  &__img
+    transition: .5s
+    &:hover
+      filter: grayscale(.75)
+      transform: scale(1.3) rotate(-10deg)
