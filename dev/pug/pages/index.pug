@@ -350,3 +350,29 @@ block content
                             li.contactInfo__item
                                 i.contactInfo__icon.fa.fa-fax.servicesDetails__icon
                                 a(href='fax:12312345678').contactInfo__heading (123) 123-45678
+    section.newsletter
+        .container
+            .row
+                .col-lg-4
+                    .subcribe
+                        h4.newsletter__header Stay informed with our newsletter
+                        p.newsletter__text Subscribe to our email newsletter for useful tips and resources.
+                        .subscribe__form
+                            form.subscribeForm
+                                input(placeholder='Email Addres').subscribeForm__input
+                                button(type='submit').btn.btn-yellow.contactForm__submit Subscribe
+                .col-lg-4
+                    .newsletter__image.howItWorkInfo__image
+                        img(src='static/img/contact_img.png').newsletter__img
+                .col-lg-4
+                    .download
+                        h4.newsletter__header Stay informed with our newsletter
+                        p.newsletter__text Subscribe to our email newsletter for useful tips and resources.
+                        .sectionButtons
+                            a(href='#').btn.btn-red.btn-mright.btn-mbottom
+                                i.fa.fa-apple
+                                | App Store
+                            a(href='#').btn.btn-yellow
+                                i.fa.fa-android
+                                | Play Store
+
