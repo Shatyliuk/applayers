@@ -139,7 +139,6 @@
     margin-bottom: 40px
   &__link
     display: flex
-
   &__circle
     padding: 22px 32px
     border-radius: 50%
@@ -147,7 +146,6 @@
     font-size: 2.2em
     color: $mainYellowColor
     margin-right: 15px
-
   &__icon
     transition: .5s
     &:hover
@@ -342,6 +340,7 @@
     margin: 0 auto
     border: 1px solid rgba(59, 66, 77, 0.6)
     border-radius: 10px
+    align-items: center
   &__image
     width: 25%
     text-align: center
@@ -359,7 +358,6 @@
     text-align: left
     font-size: 1.2em
     padding-left: 25px
-    line-height: 32px
     font-weight: 300
     font-family: $secondFont
 //section blog
@@ -412,3 +410,70 @@
       font-family: fontawesome, sans-serif
       &:hover
         color: $mainYellowColor
+//section contacts
+.contacts
+  background: url("../img/contact_bg.png") fixed 0 0 no-repeat
+  background-size: cover
+  overflow: hidden
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+    left: 0
+    background-color: rgba(1, 10, 28, 0.8)
+.contactForm
+  padding: 45px 35px
+  background-color: #fff
+  &__wrapper
+    display: flex
+    flex-direction: column
+  &__group
+    display: flex
+    flex-direction: column
+    margin-bottom: 20px
+    label
+      font-weight: bold
+      font-family: $secondFont
+      span
+        color: red
+  &__input
+    padding: 5px 15px
+    border: 1px solid #ccc
+    height: 55px
+    font-size: 1.2em
+    border-radius: 10px
+  &__area
+    padding: 5px 15px
+    border: 1px solid #ccc
+    font-size: 1.2em
+    border-radius: 10px
+    resize: vertical
+  &__submit
+    padding: 5px 15px
+    font-size: 1.5em
+.contactInfo
+  height: 100%
+  &__list
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 100%
+  &__item
+    color: #fff
+    display: flex
+    align-items: center
+    a
+      transition: .2s
+      &:hover
+        color: $mainYellowColor
+        text-decoration: none
+  &__icon
+    font-size: 4em
+    color: $mainYellowColor
+    margin-right: 20px
+  &__heading
+    font-size: 1.7em
+    color: #fff

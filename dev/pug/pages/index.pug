@@ -311,4 +311,42 @@ block content
                                 span.blogArticle__time 20 March 2016
                                 a(href="#").blogArticle__comment Comments
                             a(href="#").blogArticle__link Read More
-
+    section.contacts
+        .container
+            .row
+                .col-lg-12
+                    .sectionHeading
+                        h2.sectionHeading__header.sectionHeading__header-white CONTACT US
+                        h3.sectionHeading__text.sectionHeading__text-white Let drop a line to us & we will be in touch soon. Here goes some simple dummy text. Lorem Ipsum is simply dummy text
+                .col-lg-6
+                    .contactForm
+                        form.contactForm__wrapper
+                            .contactForm__group
+                                label(for='name') Full Name:
+                                    span *
+                                input(name='name' id='name').contactForm__input
+                            .contactForm__group
+                                label(for='email') Email Address:
+                                    span *
+                                input(name='email' id='email').contactForm__input
+                            .contactForm__group
+                                label(for='message') Message:
+                                    span *
+                                textarea(name='message' id='message').contactForm__area
+                            .contactForm__button
+                                button(type='submit').btn.btn-yellow.contactForm__submit Send Message
+                .col-lg-6
+                    .contactInfo
+                        ul.contactInfo__list
+                            li.contactInfo__item
+                                i.contactInfo__icon.fa.fa-home.servicesDetails__icon
+                                h5.contactInfo__heading 1234 Street Name, City Name, United States
+                            li.contactInfo__item
+                                i.contactInfo__icon.fa.fa-envelope-o.servicesDetails__icon
+                                a(href='mailto:contact@domain.com').contactInfo__heading contact@domain.com
+                            li.contactInfo__item
+                                i.contactInfo__icon.fa.fa-phone.servicesDetails__icon
+                                a(href='tel:12312345678').contactInfo__heading (123) 123-45678
+                            li.contactInfo__item
+                                i.contactInfo__icon.fa.fa-fax.servicesDetails__icon
+                                a(href='fax:12312345678').contactInfo__heading (123) 123-45678
