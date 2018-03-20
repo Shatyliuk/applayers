@@ -1,0 +1,20 @@
+.breadCrumbs
+  margin-bottom: 20px
+  color: #fff
+  &__item
+    display: inline-block
+  li+li:before
+    padding: 8px
+    color: #fff
+    content: '/'
+  a
+    color: #fff
+    transition: .2s
+    &:hover
+      color: $mainYellowColor
+      text-decoration: underline
+  a.active
+    color: $mainYellowColor
+    text-decoration: none
+    &:hover
+      text-decoration: underline

@@ -1,0 +1,28 @@
+extends ../layout/main
+block variables
+    - var title = '404'
+block content
+    section.topBanner.errorBanner
+        .container
+            .errorBanner__info
+                h1.errorBanner__header 404 Error
+                include ../modules/breadcrumbs
+                    li.breadCrumbs__item
+                        a(href='javascript:void(0);').breadCrumbs__link.active 404 error
+    section.errorInfo
+        .container
+            .errorDetails
+                .errorDetails__wrapper
+                    .errorDetails__heading
+                        h2.errorDetails__header 404
+                    .errorDetails__heading
+                        h2.errorDetails__header opps!
+                .errorDetails__info
+                    i.fa.fa-meh-o.errorDetails__icon
+                    h2.errorDetails__header.errorDetails__header-min Page Not Found
+                    p.errorDetails__text Sorry, but you are looking for something that isn't here.
+                form.searchForm
+                    input(type='email' placeholder='Email Address').searchForm__input
+                    button(type='submit').btn.btn-yellow.btn-search
+                        i.fa.fa-search
+                        | Search Now
