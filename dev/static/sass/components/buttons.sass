@@ -1,8 +1,8 @@
 .btn
-  font-size: 2em
+  font-size: 1.7em
   font-weight: 600
   line-height: 2em
-  padding: 5px 35px
+  padding: 5px 20px
   border-radius: 10px
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
   text-shadow: 1px 1px 1px #000
@@ -33,3 +33,43 @@
     &:hover
       background-color: $mainRedColor
       color: #fff
+
+.navIcon
+  display: none
+  flex-direction: column
+  width: 40px
+  justify-content: end
+  position: relative
+  transform: rotate(0deg)
+  transition: .5s ease-in-out
+  cursor: pointer
+  &__line
+    display: block
+    position: absolute
+    height: 5px
+    width: 100%
+    background: $mainYellowColor
+    border-radius: 9px
+    opacity: 1
+    right: 0
+    transform: rotate(0deg)
+    transition: .25s ease-in-out
+    &:nth-child(1)
+      top: 0
+    &:nth-child(2),
+    &:nth-child(3)
+      top: 12px
+    &:nth-child(4)
+      top: 24px
+  &.open
+    .navIcon__line
+      &:nth-child(1)
+        top: -12px
+        opacity: 0
+      &:nth-child(2)
+        transform: rotate(45deg)
+      &:nth-child(3)
+        transform: rotate(-45deg)
+      &:nth-child(4)
+        top: 36px
+        opacity: 0

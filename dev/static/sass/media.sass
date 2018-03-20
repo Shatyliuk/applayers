@@ -3,22 +3,139 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-  header
+@media only screen and (max-width: 1200px)
+  .nav
+    &__item
+      padding: 0
+  .servicesDetails
+    padding-left: 155px
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-  header
-
+@media only screen and (max-width: 992px)
+  .navbar
+    justify-content: center
+  .topBanner
+    text-align: center
+    &__header
+      padding-bottom: 30px
+  .sectionHeading
+    margin-bottom: 30px
+  .sectionButtons
+    margin-bottom: 30px
+  .features
+    text-align: center
+  .servicesImage
+    justify-content: center
+    margin-bottom: 30px
+    &__img-left
+      transform: translateY(0)
+  .servicesDetails
+    padding-left: 0
+    &__item
+      justify-content: center
+  .portfolioItems
+    &__header
+      font-size: 2.2em
+    &__text
+      font-size: 2em
+  .howItWork
+    text-align: center
+  .howItWorkInfo-left
+    text-align: center
+  .tags
+    &__link
+      padding: 5px 30px
+  .table
+    &__list
+      font-size: 2rem
+  .member
+    margin-bottom: 30px
+  .blogArticle
+    margin-bottom: 120px
+  .contactForm
+    margin-bottom: 35px
+  .subcribe
+    margin-bottom: 35px
+  .newsletter
+    text-align: center
+    .sectionButtons
+      .btn-mright
+        margin-right: 30px
+      .btn-mbottom
+        margin-bottom: 0
+    &__image
+      margin-bottom: 35px
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-  header
+@media only screen and (max-width: 768px)
+  .navIcon
+    display: flex
+  .navbar
+    justify-content: space-between
+    align-items: end
+    position: relative
+    padding: .5rem 0
+  .nav
+    display: none
+    position: absolute
+    width: 100%
+    top: 47px
+    &__list
+      display: flex
+      flex-direction: column
+      position: relative
+      background-color: rgba(0, 0, 0, .75)
+      text-align: center
+      width: 100%
+      transition: .5s
+    &__link
+      display: block
+      padding: 0
+      width: 100%
+    &__item
+      &:last-child
+        padding: 0
+  .servicesImage
+    flex-direction: column
+    &__img
+      width: 100%
+      margin-bottom: 35px
+      &:last-child
+        margin-bottom: 0
+  .tags
+    &__link
+      padding: 10px 15px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-  header
-
+@media only screen and (max-width: 480px)
+  .tags
+    &__link
+      padding: 10px 0
+  .footerLinks
+    &__link
+      padding: 5px 10px
+      font-size: 1.5em
+  .portfolioItems
+    &__header
+      font-size: 1.4em
+    &__text
+      font-size: 1em
+  .btn
+    &-banner
+      margin-right: 0
+      margin-bottom: 30px
+  .newsletter
+    .sectionButtons
+      .btn-mright
+        margin-right: 0
+      .btn-mbottom
+        margin-bottom: 30px
+  .featuresDetails
+    &__heading
+      font-size: 16px
+      font-weight: bold
+    &__text
+      font-size: 14px
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
+@media only screen and (max-width: 320px)
   header
 
 /**/
