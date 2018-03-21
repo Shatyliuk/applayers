@@ -1,0 +1,76 @@
+.aboutUs
+  &__img
+    animation: float-img-small 10s infinite
+.aboutUsDetails
+  font-family: $secondFont
+  &__list
+    display: flex
+
+    flex-wrap: wrap
+  &__item
+    flex-basis: 48%
+    display: flex
+    flex-direction: column
+    margin-right: 20px
+    margin-bottom: 55px
+    &:nth-child(even)
+      margin-right: 0
+  &__header
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+
+  &__text
+    font-size: .9em
+  &__icon
+    color: $mainYellowColor
+    font-size: 2em
+    margin-right: 15px
+
+//screenshots
+.screenshots
+  background: url("../img/services_bg.png") center center no-repeat fixed
+  background-size: cover
+  overflow: hidden
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+    left: 0
+    background-color: rgba(1, 10, 28, 0.8)
+.appScreen
+  text-align: center
+//accordion
+.accordion
+  display: flex
+  flex-direction: column
+  font-family: $secondFont
+  &__item
+  &__heading
+    width: 100%
+    text-align: left
+    font-size: 1.5em
+    background-color: #fff
+    outline: none
+    border: none
+    padding: 15px 0
+    border-bottom: 1px solid #e5e5e5
+    margin-bottom: 20px
+    &:before
+      content: '\f055'
+      font-family: fontawesome, sans-serif
+      margin-right: 15px
+    &.active
+      &:before
+        content: '\f056'
+
+.panel
+  max-height: 0
+  transition: .3s
+  overflow: hidden
+  &__text
+    padding: 0 35px
+    color: #555353

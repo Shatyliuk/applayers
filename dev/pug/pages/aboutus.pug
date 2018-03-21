@@ -1,0 +1,116 @@
+extends ../layout/main
+block variables
+    - var title = 'about us'
+block content
+    section.topBanner.errorBanner
+        .container
+            .errorBanner__info
+                h1.errorBanner__header About us
+                include ../modules/breadcrumbs
+                    li.breadCrumbs__item
+                        a(href='javascript:void(0);').breadCrumbs__link.active About us
+    section.aboutUs
+        .container
+            .row
+                .col-lg-12
+                    .sectionHeading
+                        h2.sectionHeading__header WELCOME TO APP LAYERS
+                        h3.sectionHeading__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text
+                .col-lg-4
+                    .aboutUs__image
+                        img(src='static/img/about-us-img.png').aboutUs__img
+                .col-lg-8
+                    .aboutUsDetails
+                        ul.aboutUsDetails__list
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-star-o.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Easy to Use
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-heart-o.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading User Friendly
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-laptop.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Slick Design
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-thumbs-o-up.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Excellent Support
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-lightbulb-o.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Pixel Perfect
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-cogs.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Easy to Customize
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-lightbulb-o.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Pixel Perfect
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+                            li.aboutUsDetails__item
+                                .aboutUsDetails__header
+                                    i.fa.fa-cogs.aboutUsDetails__icon
+                                    h5.aboutUsDetails__heading Easy to Customize
+                                p.aboutUsDetails__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+    section.screenshots
+        .container
+            .row
+                .col-lg-12
+                    .sectionHeading
+                        h2.sectionHeading__header.sectionHeading__header-white APP SCREENSHOT
+                        h3.sectionHeading__text.sectionHeading__text-white Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text
+                .col-lg-3.col-sm-6
+                    .appScreen
+                        img(src='static/img/about-us-img1.png').appScreen__img
+                .col-lg-3.col-sm-6
+                    .appScreen
+                        img(src='static/img/about-us-img2.png').appScreen__img
+                .col-lg-3.col-sm-6
+                    .appScreen
+                        img(src='static/img/about-us-img3.png').appScreen__img
+                .col-lg-3.col-sm-6
+                    .appScreen
+                        img(src='static/img/about-us-img4.png').appScreen__img
+    section.questions
+        .container
+            .row
+                .col-lg-12
+                    .sectionHeading
+                        h2.sectionHeading__header FREQUENTLY ASKED QUESTIONS
+                        h3.sectionHeading__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text
+                    .accordion
+                        .accordion__item
+                            button.accordion__heading Lorem Ipsum is simply dummy text ?
+                            .panel
+                                p.panel__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
+                                p.panel__text It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .accordion__item
+                            button.accordion__heading There are many variations of passages of Lorem Ipsum ?
+                            .panel
+                                p.panel__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
+                                p.panel__text It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .accordion__item
+                            button.accordion__heading It is a long established fact that a reader ?
+                            .panel
+                                p.panel__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
+                                p.panel__text It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .accordion__item
+                            button.accordion__heading Contrary to popular belief, Lorem Ipsum is not simply random ?
+                            .panel
+                                p.panel__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
+                                p.panel__text It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .accordion__item
+                            button.accordion__heading There are many variations of passages of Lorem Ipsum ?
+                            .panel
+                                p.panel__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
+                                p.panel__text It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
