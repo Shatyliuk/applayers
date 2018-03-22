@@ -51,7 +51,7 @@ gulp.task('pug', function () {
 });
 
 gulp.task('js:dev', function () {
-    return gulp.src(['./dev/static/js/libs/*.min.js'])
+    return gulp.src(['./dev/static/js/libs/*.min.js', 'node_modules/jquery.countdown/jquery.countdown.js'])
         .pipe(concat('libs.min.js'))
         .pipe(gulp.dest('./build/static/js/'))
         .pipe(browserSync.reload({
@@ -60,7 +60,7 @@ gulp.task('js:dev', function () {
 });
 
 gulp.task('js:build', function () {
-    return gulp.src(['./dev/static/js/libs/*.min.js'])
+    return gulp.src(['./dev/static/js/libs/*.min.js', 'node_modules/jquery.countdown/jquery.countdown.js'])
         .pipe(concat('libs.min.js'))
         .pipe(uglifyjs())
         .pipe(gulp.dest('./build/static/js/'))
