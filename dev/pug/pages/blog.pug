@@ -1,0 +1,202 @@
+extends ../layout/main
+block variables
+    - var title = 'Blog'
+block content
+    section.topBanner.errorBanner
+        .container
+            .errorBanner__info
+                h1.errorBanner__header App News
+                include ../modules/breadcrumbs
+                    li.breadCrumbs__item
+                        a(href='javascript:void(0);').breadCrumbs__link.active Blog
+    section.postBlog
+        .container
+            .row
+                .col-lg-8
+                    article.blogPost
+                        h4.blogPost__header
+                            a(href='#').blogPost__link Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .blogPost__details
+                            .blogPost__category
+                                ul.blogPost__list
+                                    li.blogPost__item
+                                        a(href='#').blogPost__link.blogPost__link-bold company news
+                                    li.blogPost__item
+                                        a(href='#').blogPost__link.blogPost__link-bold  fresh releases
+                            .blogPost__info
+                                a(href='#').blogPost__link.blogPost__link-grey POST BY : ADMIN
+                                a(href='#').blogPost__link.blogPost__link-grey ON : 20 MAY 2016
+                        .blogPost__image
+                            a(href='#')
+                                img(src='static/img/blog_post_img1.png')
+                        .blogPost__text
+                            p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        .blogPost__ref
+                            a(href='#').blogPost__link Continue reading
+                    article.blogPost
+                        h4.blogPost__header
+                            a(href='#').blogPost__link Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .blogPost__details
+                            .blogPost__category
+                                ul.blogPost__list
+                                    li.blogPost__item
+                                        a(href='#').blogPost__link.blogPost__link-bold company news
+                                    li.blogPost__item
+                                        a(href='#').blogPost__link.blogPost__link-bold fresh releases
+                            .blogPost__info
+                                a(href='#').blogPost__link.blogPost__link-grey POST BY : ADMIN
+                                a(href='#').blogPost__link.blogPost__link-grey ON : 20 MAY 2016
+                        .blogPost__image
+                            a(href='#')
+                                img(src='static/img/blog_post_img1.png')
+                        .blogPost__text
+                            p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        .blogPost__ref
+                            a(href='#').blogPost__link Continue reading
+                    article.blogPost
+                        h4.blogPost__header
+                            a(href='#').blogPost__link Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .blogPost__details
+                            .blogPost__category
+                                ul.blogPost__list
+                                    li.blogPost__item
+                                        a(href='#').blogPost__link.blogPost__link-bold company news
+                                    li.blogPost__item
+                                        a(href='#').blogPost__link.blogPost__link-bold fresh releases
+                            .blogPost__info
+                                a(href='#').blogPost__link.blogPost__link-grey POST BY : ADMIN
+                                a(href='#').blogPost__link.blogPost__link-grey ON : 20 MAY 2016
+                        .blogPost__image
+                            a(href='#')
+                                img(src='static/img/blog_post_img1.png')
+                        .blogPost__text
+                            p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        .blogPost__ref
+                            a(href='#').blogPost__link Continue reading
+
+                .col-lg-4
+                    aside.blogAside
+                        .newsLetter
+                            .blogAside__header
+                                h5.sectionHeading__header.sectionHeading__header-white.sectionHeading__header-lower NEWSLETTER
+                            p.newsLetter__text Subscribe to our email newsletter for useful tips and resources.
+                            form.searchForm.searchForm-column
+                                input(type='email' placeholder='Email Address').searchForm__input.searchForm__input-column
+                                button(type='submit').btn.btn-yellow.btn-subcribe subscribe
+                        .sidebarWrapper
+                            .blogAside__header
+                                h5.sectionHeading__header.sectionHeading__header-lower RECENT POST
+                            .recentDetails
+                                .recentDetails__row
+                                    .recentDetails__img
+                                        img(src='static/img/recent_img1.png')
+                                    .recentDetails__text
+                                        a(href='#').recentDetails__link.recentDetails__link-low It is a long established fact that a reader
+                                .blogPost__category
+                                    ul.blogPost__list
+                                        li.blogPost__item
+                                            a(href='#').blogPost__link.blogPost__link-bold.recentDetails__link company news
+                                        li.blogPost__item
+                                            a(href='#').blogPost__link.blogPost__link-bold.recentDetails__link fresh releases
+                            .recentDetails
+                                .recentDetails__row
+                                    .recentDetails__img
+                                        img(src='static/img/recent_img2.png')
+                                    .recentDetails__text
+                                        a(href='#').recentDetails__link.recentDetails__link-low All the Lorem Ipsum generators on the Internet
+                                .blogPost__category
+                                    ul.blogPost__list
+                                        li.blogPost__item
+                                            a(href='#').blogPost__link.blogPost__link-bold.recentDetails__link fresh releases
+                            .recentDetails
+                                .recentDetails__row
+                                    .recentDetails__img
+                                        img(src='static/img/recent_img3.png')
+                                    .recentDetails__text
+                                        a(href='#').recentDetails__link.recentDetails__link-low There are many variations of passages.
+                                .blogPost__category
+                                    ul.blogPost__list
+                                        li.blogPost__item
+                                            a(href='#').blogPost__link.blogPost__link-bold.recentDetails__link company news
+                            .recentDetails
+                                .recentDetails__row
+                                    .recentDetails__img
+                                        img(src='static/img/recent_img4.png')
+                                    .recentDetails__text
+                                        a(href='#').recentDetails__link.recentDetails__link-low There are many variations of passages.
+                                .blogPost__category
+                                    ul.blogPost__list
+                                        li.blogPost__item
+                                            a(href='#').blogPost__link.blogPost__link-bold.recentDetails__link company news
+                        .sidebarWrapper
+                            .blogAside__header
+                                h5.sectionHeading__header.sectionHeading__header-lower CATEGORIES
+                            .categoriesDetails
+                                ul.categoriesDetails__list
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Company News
+                                            span.categoriesDetails__number 25
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Updates
+                                            span.categoriesDetails__number 15
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Fresh releases
+                                            span.categoriesDetails__number 35
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Actions & offers
+                                            span.categoriesDetails__number 10
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Travel
+                                            span.categoriesDetails__number 18
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Music
+                                            span.categoriesDetails__number 16
+                                    li.categoriesDetails__item
+                                        a(href='#').categoriesDetails__link
+                                            .categoriesDetails__info
+                                                i.fa.fa-folder-open-o
+                                                | Food & Drink
+                                            span.categoriesDetails__number 25
+                        .sidebarWrapper
+                            .blogAside__header
+                                h5.sectionHeading__header.sectionHeading__header-lower EXPLORE TAGS
+                                .tagsDetail
+                                    ul.tagsDetail__list
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Company news
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Fresh releases
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Updates
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Music
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Travel
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Company news
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Fresh releases
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Updates
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Music
+                                        li.tagsDetail__item
+                                            a(href='#').tagsDetail__link Travel

@@ -1,0 +1,121 @@
+.postBlog
+  padding: 60px 0
+.blogPost
+  display: flex
+  flex-direction: column
+  font-family: $secondFont
+  padding-bottom: 30px
+  margin-bottom: 30px
+  border-bottom: 1px solid rgb(204, 204, 204)
+  &__header
+    font-weight: 400
+    font-size: 2em
+    margin-bottom: 25px
+  &__details
+    display: flex
+    flex-wrap: wrap
+  &__category
+  &__list
+    display: flex
+    flex-wrap: wrap
+    li+li:before
+      padding-right: 8px
+      color: #000
+      content: ','
+  &__item
+  &__link
+    transition: .3s
+    &:hover
+      color: $mainYellowColor
+      text-decoration: none
+    &-bold
+      font-weight: bold
+      text-transform: uppercase
+    &-grey
+      color: #949393
+  &__info
+    a
+      &:before
+        content: '|'
+        padding: 0 10px
+  &__image
+    margin-bottom: 15px
+  &__text
+    font-size: 1.1em
+    font-family: $mainFont
+    color: #949393
+    margin-bottom: 15px
+  &__ref
+    font-family: $mainFont
+    font-size: 1.1em
+    a
+      &:after
+        content: '\f178'
+        font-family: fontawesome, sans-serif
+        padding-left: 5px
+.blogAside
+  &__header
+    font-size: 1.5em
+.newsLetter
+  padding: 25px
+  margin-bottom: 40px
+  background-color: #000
+  text-align: center
+  &__text
+    color: #fff
+    text-align: center
+    margin-bottom: 25px
+.sidebarWrapper
+  padding: 20px
+  margin-bottom: 40px
+  border: 1px solid rgb(204, 204, 204)
+  text-align: center
+.recentDetails
+  display: flex
+  flex-direction: column
+  padding-bottom: 25px
+  border-bottom: 1px solid rgb(204, 204, 204)
+  margin-bottom: 15px
+  &__link
+    font-size: 12px
+    &:hover
+      text-decoration: none
+      color: $mainYellowColor
+  &__row
+    display: flex
+  &__img
+    flex-basis: 60%
+    margin-right: 5px
+.categoriesDetails
+  &__item
+    padding-bottom: 10px
+    margin-bottom: 15px
+    border-bottom: 1px dashed
+    &:last-child
+      border-bottom: none
+  &__link
+    display: flex
+    justify-content: space-between
+    transition: .3s
+    i
+      margin-right: 10px
+    &:hover
+      color: $mainYellowColor
+      text-decoration: none
+.tagsDetail
+  &__list
+    display: flex
+    flex-wrap: wrap
+  &__item
+    margin-right: 5px
+  &__link
+    padding: 5px 10px
+    background-color: $mainYellowColor
+    border-radius: 10px
+    font-size: 14px
+    transition: .3s
+    color: #fff
+    &:hover
+      background-color: $mainRedColor
+      text-decoration: none
+      color: #fff
