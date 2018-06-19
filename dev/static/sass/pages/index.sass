@@ -16,6 +16,7 @@
   &__text
     color: #fff
     font-family: $secondFont
+    transition: .3s
   &__header
     font-size: 3.5em
     line-height: 76px
@@ -28,6 +29,8 @@
   &__accent
     color: $mainYellowColor
     font-weight: bold
+  &__image
+    transition: .3s
   &__img
     animation-delay: 1s
     animation: float-img infinite 15s
@@ -40,6 +43,7 @@
 .sectionHeading
   text-align: center
   margin-bottom: 60px
+  transform: translate(-200%)
   &-white
     color: #fff
   &__header
@@ -507,3 +511,8 @@
     outline: none
     border: 1px solid #bfbfbf
     margin-bottom: 25px
+.animation-element
+  transform: translateX(-200%)
+.in-view
+  transition: .5s
+  transform: translate(0)
